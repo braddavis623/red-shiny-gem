@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  get 'greetings/hello'
+  root 'greetings#hello'
   resources :items
-
   resources :categories
 
   # The priority is based upon order of creation: first created -> highest priority.
